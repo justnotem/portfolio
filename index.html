@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>James Matthew Espiritu | Student </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CDN  -->
+        
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                'Poppins',
+                'system-ui',
+                '-apple-system',
+                'Segoe UI',
+                'sans-serif',
+              ],
+            },
+            colors: {
+              accent: {
+                DEFAULT: '#BF092F',
+                soft: '#FFF58A',
+              },
+            },
+            boxShadow: {
+              glow: '0 0 30px rgba(20,184,166,0.45)',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Styles -->
+     <link rel="stylesheet" href="css/styles.css" />
+</head> 
+<body
+class="font-sans bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased"
+>
+    
+    <!-- NAVBAR  -->
+<header
+      class="fixed top-0 inset-x-0 z-40 border-b border-slate-200/70 dark:border-slate-800/70 bg-white/80 dark:bg-slate-900/75 backdrop-blur-lg"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+      >
+        <!-- Nav name -->
+        <a href="#top" class="flex items-center gap-3 group">
+          
+          <div class="flex flex-col leading-tight">
+            
+            <span class="text-sm font-semibold tracking-wide">James Matthew Espiritu</span>
+            <span class="text-xs text-slate-500 dark:text-slate-400">
+              IT Student
+            </span>
+          </div>
+        </a>
+
+        <!-- Right: Nav links + theme toggle -->
+        <div class="flex items-center gap-4">
+          <nav class="hidden md:flex items-center gap-2 text-sm font-medium">
+            <a
+              href="#about"
+              class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >Experience</a
+            >
+
+            <a
+              href="#education"
+              class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >Education</a
+            >
+            <a
+              href="#skills"
+              class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Dark mode toggle -->
+          <button
+            id="theme-toggle"
+            class="inline-flex items-center gap-2 text-xs md:text-sm px-3 py-1.5 rounded-full border border-slate-300/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-800/80 shadow-sm hover:shadow-md transition-all"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <i
+              id="theme-toggle-icon"
+              class="fa-solid fa-moon text-[0.8rem] text-slate-600 dark:text-amber-300"
+            ></i>
+            <span id="theme-toggle-text" class="hidden sm:inline-block"
+              >Dark</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="top" class="pt-20 md:pt-24">
+      <!-- HERO -->
+      <section
+        class="relative overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-slate-200/60 dark:border-slate-800/60 min-h-[80vh] flex items-center"
+      >
+        <!-- Gradient blobs -->
+        <div class="pointer-events-none absolute inset-0 -z-10">
+          <div
+            class="blob absolute -top-24 -left-12 h-72 w-72 bg-accent/40 dark:bg-accent/30 rounded-full"
+          ></div>
+          <div
+            class="blob absolute top-40 -right-16 h-80 w-80 bg-cyan-400/30 dark:bg-cyan-500/25 rounded-full"
+          ></div>
+          <div
+            class="blob absolute bottom-0 left-1/3 h-64 w-64 bg-indigo-400/20 dark:bg-indigo-500/25 rounded-full"
+          ></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div
+            class="grid gap-10 lg:grid-cols-[1.2fr,0.9fr] items-center reveal"
+>
+        <!-- Text  -->
+        <div>
+              <p
+                class="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.15em] text-accent bg-accent/5 dark:bg-accent/15 px-3 py-1 rounded-full mb-4"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+                IT Student
+              </p>
+              <h1
+                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-3"
+              >
+                James Matthew Espiritu
+              </h1>
+              <p
+                class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mb-3"
+              >
+                IT student 
+              </p>
+              <p
+                class="text-sm sm:text-base text-slate-500 dark:text-slate-400 mb-6"
+              >
+                A determined individual willing to manage dual responsibilities to achieve long-term success.
+              </p>
+
+              
+              <!-- Highlight badges -->
+              <div
+                class="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 text-xs sm:text-sm"
+              >
+                <div
+                  class="rounded-xl border border-slate-200/80 dark:border-slate-700/80 bg-white/70 dark:bg-slate-900/70 px-3 py-2 flex items-center gap-2 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                >
+                  <span
+                    class="h-7 w-7 flex items-center justify-center rounded-lg bg-accent/10 text-accent text-xs"
+                  >
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                  </span>
+                  <span>IT Student </span>
+                </div>
+                <div
+                  class="rounded-xl border border-slate-200/80 dark:border-slate-700/80 bg-white/70 dark:bg-slate-900/70 px-3 py-2 flex items-center gap-2 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                >
+                  <span
+                    class="h-7 w-7 flex items-center justify-center rounded-lg bg-accent/10 text-accent text-xs"
+                  >
+                    <i class="fa-solid fa-user-graduate"></i>
+                  </span>
+                  <span>Working Student </span>
+                </div>
+                
+              </div>
+            </div>
+
+              <!-- Hero Image card  -->
+               <div class="reveal">
+              <div
+                class="relative rounded-3xl border border-slate-200/70 dark:border-slate-800 bg-white/80 dark:bg-slate-900/90 shadow-xl shadow-accent/10 p-3 sm:p-4 lg:p-5 backdrop-blur overflow-hidden"
+              >
+                <!-- Glow accent -->
+                <div
+                  class="absolute -top-6 -right-6 h-16 w-16 rounded-3xl bg-gradient-to-br from-accent to-cyan-500 opacity-60 blur-xl"
+                ></div>
+
+                <div class="relative rounded-2xl overflow-hidden">
+                  <img
+                    src="img/portfolio2.jpg"
+                    alt="BSIT Student"
+                    class="hero-photo w-full transform hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+
+                <div class="mt-4">
+                  <p
+                    class="text-xs uppercase tracking-[0.18em] text-slate-500 mb-1"
+                  >
+                    Professional Profile
+                  </p>
+                  <p class="text-sm text-slate-700 dark:text-slate-200">
+                    Nigger
+                  </p>
+
+                  <!-- Small badges inside the card (area you pointed to) -->
+                  <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
+                    <span
+                      class="inline-flex items-center rounded-full px-3 py-1 bg-accent/10 text-accent font-medium"
+                    >
+                      <i class="fa-solid fa-chalkboard-user mr-1.5"></i>
+                      IT Student
+                    </span>
+                    <span
+                      class="inline-flex items-center rounded-full px-3 py-1 bg-indigo-500/10 text-indigo-400 font-medium"
+                    >
+                      <i class="fa-solid fa-user-graduate"></i>
+                      Working Student 
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+
+        <!-- ABOUT  -->
+         <section
+        id="about"
+        class="py-14 sm:py-16 lg:py-20 border-t border-slate-200/70 dark:border-slate-800/70"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+          <div class="grid md:grid-cols-[1.7fr,1fr] gap-10 items-start">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-bold mb-3">About JM </h2>
+              <p
+                class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed"
+              >
+                As a highly motivated 2nd Year College Student currently pursuing a Bachelor of Science in Information Technology (BSIT), I am deeply committed to transitioning my passion for technology into a successful career. My academic journey is fueled by a practical work ethic, which I am actively developing through my role at McDonald's.
+              </p>
+              <p
+                class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed mt-3"
+              >
+                I am on a mission to rapidly expand my knowledge and skills within the IT field, with a particular focus on front-end and back-end coding. I am dedicated to mastering the core principles of software development and building comprehensive skills in creating robust, data-driven web applications.
+              </p>
+              <p
+                class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed mt-3"
+              >
+                Outside of my studies and work, I enjoy the strategic and competitive world of gaming, particularly titles like Dota 2, Where Winds Meet, Valorant, Counter-Strike 2, and Helldivers 2. This interest reinforces my ability to analyze complex systems, work collaboratively, and persevere through challenging problems—qualities I believe are essential for a successful career in coding and IT.
+              </p>
+            </div>
+
+            <!-- Interests -->
+            <div
+              class="rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/90 p-5 shadow-md shadow-slate-200/70 dark:shadow-slate-900/70"
+            >
+              <h3
+                class="text-sm font-semibold mb-3 text-slate-700 dark:text-slate-200"
+              >
+                My activities
+              </h3>
+              <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 h-7 w-7 rounded-xl bg-accent/10 text-accent flex items-center justify-center text-xs"
+                  >
+                    <i class="fab fa-steam"></i>
+                  </span>
+                  <div>
+                    <p
+                      class="font-medium text-xs uppercase tracking-[0.16em] text-slate-500"
+                    >
+                      Competitive Gaming
+                    </p>
+                    <p>
+                      Develops strategic planning, rapid problem-solving, and decisive execution under pressure.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 h-7 w-7 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xs"
+                  >
+                    <i class="	fas fa-basketball-ball"></i>
+                  </span>
+                  <div>
+                    <p
+                      class="font-medium text-xs uppercase tracking-[0.16em] text-slate-500"
+                    >
+                      Sports & Fitness
+                    </p>
+                    <p>
+                      Values commitment, endurance, and the discipline necessary to maintain a challenging study and work balance.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 h-7 w-7 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs"
+                  >
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </span>
+                  <div>
+                    <p
+                      class="font-medium text-xs uppercase tracking-[0.16em] text-slate-500"
+                    >
+                      Working Student
+                    </p>
+                    <p>
+                      RDemonstrates accountability, professionalism, and exceptional time management in juggling two demanding roles.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Experience -->
+       <section
+        id="experience"
+        class="py-14 sm:py-16 lg:py-20 border-t border-slate-200/70 dark:border-slate-800/70"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+          <div
+            class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8"
+          >
+            <div>
+              <h2 class="text-xl sm:text-2xl font-bold mb-2">
+                Professional Background
+              </h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400">
+                Timeline of Growth, Responsibility, and Technical Pursuits.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative pl-4 sm:pl-6">
+            <!-- Timeline line -->
+            <span
+              class="absolute left-1 sm:left-2 top-0 bottom-0 w-px bg-slate-200 dark:bg-slate-800"
+            ></span>
+
+            <div class="space-y-6 text-sm">
+              <!-- Each experience -->
+              <article class="flex gap-4">
+                <div class="pt-1">
+                  <span class="block h-3 w-3 rounded-full bg-accent"></span>
+                </div>
+                <div
+                  class="w-full rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-4 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/10 transition-all"
+                >
+                  <div class="flex flex-wrap justify-between gap-2 mb-1">
+                    <h3 class="font-semibold">
+                      Service Crew of McDonald's
+                    </h3>
+                    <span class="text-xs text-slate-500 dark:text-slate-400">
+                      Nov 2023 – Present
+                    </span>
+                  </div>
+                  
+                  <p class="text-sm text-slate-600 dark:text-slate-300">
+                    A Service Crew member is responsible for the rapid and accurate execution of all restaurant operations. I ensure food quality and safety standards are met by preparing menu items and maintaining high levels of cleanliness across all work and dining areas.
+                  </p>
+                </div>
+              </article>
+              </div>
+              </div>
+            </section>
+              
+              <!-- Education -->
+               <section
+        id="education"
+        class="py-14 sm:py-16 lg:py-20 border-t border-slate-200/70 dark:border-slate-800/70"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+          <div
+            class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8"
+          >
+            <div>
+              <h2 class="text-xl sm:text-2xl font-bold mb-2">
+                Academic Background
+              </h2>
+              
+            </div>
+          </div>
+          <div class="grid gap-5 md:grid-cols-2">
+            <article
+              class="rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-5 sm:p-6 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/10 transition-all"
+            >
+              <h3 class="font-semibold text-sm sm:text-base">
+                Rafael Palma Elementary School
+              </h3>
+              <p
+                class="text-xs uppercase tracking-[0.18em] text-slate-500 mt-1"
+              >
+                Primary Education
+              </p>
+              
+              <p class="text-xs text-slate-400 dark:text-slate-500 mt-2">
+                2009-2015
+              </p>
+            </article>
+
+            <article
+              class="rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-5 sm:p-6 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/10 transition-all"
+            >
+              <h3 class="font-semibold text-sm sm:text-base">
+                Southeastern College/Adamson University/Arellano Mabini
+              </h3>
+              <p
+                class="text-xs uppercase tracking-[0.18em] text-slate-500 mt-1"
+              >
+                Secondary Education
+              </p>
+              <p class="text-xs text-slate-400 dark:text-slate-500 mt-3">
+                2015-2021
+              </p>
+            </article>
+
+            <article
+              class="rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-5 sm:p-6 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/10 transition-all"
+            >
+              <h3 class="font-semibold text-sm sm:text-base">
+                Arellano University 
+              </h3>
+              <p
+                class="text-xs uppercase tracking-[0.18em] text-slate-500 mt-1"
+              >
+                Bachelor of Science in Information Technology
+              </p>
+              <p class="text-xs text-slate-400 dark:text-slate-500 mt-3">
+                2023-Present
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+        
+     </main>
+     <!-- JS: Theme toggle + scroll reveal -->
+    <script src="js/main.js"></script>
+</body>
+</html>
